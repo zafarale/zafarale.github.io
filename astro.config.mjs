@@ -16,10 +16,11 @@ export default defineConfig({
     site: 'https://example.com',
     integrations: [
         astroExpressiveCode({
+            themes: ['andromeeda','solarized-dark'],
             plugins: [
                 pluginLineNumbers(),
                 pluginCollapsibleSections()
-            ],
+            ]
         }),
         mdx(), 
         sitemap(), 

@@ -1,7 +1,7 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: 'Jun 19 2024'
+title: 'Deep dive into accessibility (Part 1)'
+description: 'A deep dive into web accessibility'
+pubDate: 'Sep 20 2024'
 heroImage: '/blog-placeholder-1.jpg'
 ---
 
@@ -49,7 +49,7 @@ The blockquote element represents content that is quoted from another source, op
 
 #### Syntax
 
-```markdown showLineNumbers=false
+```markdown showLineNumbers=false  title="my-test-file.js"
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 ```
