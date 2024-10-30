@@ -2,20 +2,20 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { ViewTransitions } from 'astro:transitions';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 ---
-
-
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<ViewTransitions />
 	</head>
 	<body>
 		<Header />
-		<main class="w-4/5 ml-auto mr-auto mt-10 border border-sky-500">
+		<main class="w-4/5 ml-auto mr-auto mt-10" transition:animate="fade">
             <slot>
                 
             </slot>

@@ -1,8 +1,11 @@
 ---
 title: 'Deep dive into accessibility (Part 1)'
 description: 'A deep dive into web accessibility'
-pubDate: 'Sep 20 2024'
+publicationDate: 2024-10-08
 heroImage: '/blog-placeholder-1.jpg'
+tags: ['Web','Accessibility']
+relatedPosts:
+  - deep-dive-into-sccessibility-2
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
@@ -38,7 +41,6 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 ```
 
 ### Output
-
 ![blog placeholder](/blog-placeholder-about.jpg)
 
 ## Blockquotes

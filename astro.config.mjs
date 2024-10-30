@@ -11,6 +11,8 @@ import astroExpressiveCode from 'astro-expressive-code'
 import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-sections'
 
+//import starlight from '@astrojs/starlight';
+
 // https://astro.build/config
 export default defineConfig({
     site: 'https://example.com',
@@ -21,8 +23,10 @@ export default defineConfig({
                 pluginLineNumbers(),
                 pluginCollapsibleSections()
             ]
-        }),
+        }), 
         mdx(), 
         sitemap(), 
-        tailwind()],
+        tailwind(), 
+        //starlight()
+    ],
 });

@@ -5,30 +5,35 @@ import MainLayout from './MainLayout.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, publicationDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <MainLayout>
 	<article>
-		<div class="hero-image">
-			{heroImage && <img width={1020} height={510} src={heroImage} alt="" class="mr-auto ml-auto"/>}
-		</div>
-		<div class="prose">
-			<div class="title">
-				<div class="date">
-					<FormattedDate date={pubDate} />
-					{
-						updatedDate && (
-							<div class="last-updated-on">
-								Last updated on <FormattedDate date={updatedDate} />
-							</div>
-						)
-					}
-				</div>
-				<h1>{title}</h1>
-				<hr />
+		<div class="title">
+			<div class="date">	
+				<FormattedDate date={publicationDate} />
+				{
+					updatedDate && (
+						<div class="last-updated-on">
+							Last updated on <FormattedDate date={updatedDate} />
+						</div>
+					)
+				}
 			</div>
+			<h1>{title}</h1>
+			<hr />
+		</div>		
+		<div>
+			{heroImage && <img src={heroImage} alt={description} class="mr-auto ml-auto w-full rounded-lg"/>}
+		</div>
+		<div class="prose max-w-none prose-img:rounded-xl prose-headings:underline prose-a:text-blue-600">
 			<slot />
 		</div>
 	</article>
 </MainLayout>
+<style>
+	.prose: {
+		margin: auto;
+	}
+</style>
